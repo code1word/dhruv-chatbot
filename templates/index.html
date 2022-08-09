@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dhruv's Chatbot</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="chatbox_support">
+        <div class="chatbox_header">
+          <div class="photo_and_name">
+            <div class="chatbox_header-image">
+              <img src="../static/dyphoto.png" alt="image" />
+              <span class="status"></span>
+            </div>
+            <div class="chatbox_content-header">
+              <h4 class="chatbox_header-heading">Dhruv Yalamanchi</h4>
+              <p class="chatbox_header-description">Active now</p>
+            </div>
+          </div>
+          <div class="information">
+            <button class="info_icon"><i class="fa fa-info"></i></button>
+            <div class="dropdown-content">
+              <a href="https://dhruvyalamanchi.herokuapp.com" target="_blank"
+                >Portfolio
+                <i class="fa fa-laptop-code" style="font-size: 14px"></i
+              ></a>
+              <a href="https://github.com/code1word" target="_blank"
+                >GitHub <i class="fab fa-github-square"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/dhruvyalamanchi"
+                target="_blank"
+                >LinkedIn <i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="chatbox_messages">
+          <div></div>
+        </div>
+        <div class="chatbox_footer">
+          <input
+            type="text"
+            placeholder="Message..."
+            autocomplete="off"
+            autofocus
+          />
+          <button class="chatbox_footer-send send_button">
+            <i class="fa fa-paper-plane"></i>
+          </button>
+          <div class="delete_history">
+            <button class="clear_history"><i class="fa fa-trash"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="hidden_text-width">
+        Sorry! Your device's screen width is not large enough to view this
+        content. Please try again with a device that has a wider screen.
+        <div class="frown">
+          <i class="fa fa-frown" style="color: yellow"></i>
+        </div>
+      </div>
+      <div class="hidden_text-height">
+        Sorry! Your device's screen is not tall enough to view this
+        content. If you're using a mobile device, try rotating the screen.
+        <div class="frown">
+          <i class="fa fa-frown" style="color: yellow"></i>
+        </div>
+      </div>
+    </div>
+    <script type = text/javascript>
+      $SCRIPT_ROOT = ""
+    </script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='app.js') }}"
+    ></script>
+  </body>
+</html>
