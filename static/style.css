@@ -69,8 +69,6 @@ body {
   justify-content: space-between;
   background: #04c3ff;
   padding: 15px 20px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
 }
 
 .photo_and_name {
@@ -246,8 +244,6 @@ body {
   padding: 20px 20px;
   bottom: 0;
   background: #04c3ff;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
 }
 
 .chatbox_footer input {
